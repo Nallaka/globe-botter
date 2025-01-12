@@ -1,0 +1,653 @@
+[
+    {
+        "riotid": "Nallaka#NA1",
+        "puuid": "ue2lM7JIe1hAtvcG69587-wpiqnXK15T7yBPL622soLKnB5447meZ_sGPPF64hWnwn742KIr20pJyg",
+        "discord": "nallaka",
+        "challenges": [
+            {
+                "challengeId": 303500,
+                "percentile": 0.001,
+                "level": "GOLD",
+                "value": 370.0,
+                "achievedTime": 1736223199476
+            },
+            {
+                "challengeId": 303501,
+                "percentile": 0.002,
+                "level": "GOLD",
+                "value": 1.0,
+                "achievedTime": 1736391833822
+            },
+            {
+                "challengeId": 303502,
+                "percentile": 0.001,
+                "level": "GOLD",
+                "value": 1.0,
+                "achievedTime": 1736016656647
+            },
+            {
+                "challengeId": 303503,
+                "percentile": 0.001,
+                "level": "PLATINUM",
+                "value": 3.0,
+                "achievedTime": 1736659847478
+            },
+            {
+                "challengeId": 303508,
+                "percentile": 0.001,
+                "level": "GOLD",
+                "value": 1.0,
+                "achievedTime": 1736221625595
+            },
+            {
+                "challengeId": 303509,
+                "percentile": 0.001,
+                "level": "GOLD",
+                "value": 1.0,
+                "achievedTime": 1736019406090
+            },
+            {
+                "challengeId": 303510,
+                "percentile": 0.001,
+                "level": "PLATINUM",
+                "value": 3.0,
+                "achievedTime": 1736394213940
+            },
+            {
+                "challengeId": 303511,
+                "percentile": 0.001,
+                "level": "GOLD",
+                "value": 1.0,
+                "achievedTime": 1736015153449
+            },
+            {
+                "challengeId": 303504,
+                "percentile": 0.002,
+                "level": "GOLD",
+                "value": 2.0,
+                "achievedTime": 1736290266660
+            },
+            {
+                "challengeId": 303505,
+                "percentile": 0.001,
+                "level": "PLATINUM",
+                "value": 3.0,
+                "achievedTime": 1736225432702
+            },
+            {
+                "challengeId": 303506,
+                "percentile": 0.001,
+                "level": "GOLD",
+                "value": 1.0,
+                "achievedTime": 1736013382286
+            },
+            {
+                "challengeId": 303507,
+                "percentile": 0.001,
+                "level": "GOLD",
+                "value": 1.0,
+                "achievedTime": 1736387835288
+            },
+            {
+                "challengeId": 303512,
+                "percentile": 0.001,
+                "level": "GOLD",
+                "value": 2.0,
+                "achievedTime": 1736048198718
+            },
+            {
+                "challengeId": 303513,
+                "percentile": 0.001,
+                "level": "GOLD",
+                "value": 2.0,
+                "achievedTime": 1735956639210
+            }
+        ]
+    },
+    {
+        "riotid": "Mrbluellama#NA1",
+        "puuid": "noJgcZ3k1R-LJbJIM4G6yAo-36pIxZR6kFuAkRyh3gk6XZYJQw501xLR8knni9FOeJEwNE-JObX-FA",
+        "discord": "mrbluellama",
+        "challenges": [
+            {
+                "challengeId": 303500,
+                "percentile": 0.001,
+                "level": "GOLD",
+                "value": 355.0,
+                "achievedTime": 1736223199475
+            },
+            {
+                "challengeId": 303501,
+                "percentile": 0.002,
+                "level": "GOLD",
+                "value": 1.0,
+                "achievedTime": 1736391833822
+            },
+            {
+                "challengeId": 303502,
+                "percentile": 0.001,
+                "level": "GOLD",
+                "value": 2.0,
+                "achievedTime": 1736016656647
+            },
+            {
+                "challengeId": 303503,
+                "percentile": 0.001,
+                "level": "PLATINUM",
+                "value": 4.0,
+                "achievedTime": 1736658445627
+            },
+            {
+                "challengeId": 303508,
+                "percentile": 0.001,
+                "level": "GOLD",
+                "value": 1.0,
+                "achievedTime": 1736221625595
+            },
+            {
+                "challengeId": 303509,
+                "percentile": 0.001,
+                "level": "GOLD",
+                "value": 1.0,
+                "achievedTime": 1736019406090
+            },
+            {
+                "challengeId": 303510,
+                "percentile": 0.001,
+                "level": "PLATINUM",
+                "value": 3.0,
+                "achievedTime": 1736394213940
+            },
+            {
+                "challengeId": 303511,
+                "percentile": 0.001,
+                "level": "GOLD",
+                "value": 1.0,
+                "achievedTime": 1736015153449
+            },
+            {
+                "challengeId": 303504,
+                "percentile": 0.002,
+                "level": "GOLD",
+                "value": 1.0,
+                "achievedTime": 1736395837121
+            },
+            {
+                "challengeId": 303505,
+                "percentile": 0.002,
+                "level": "GOLD",
+                "value": 2.0,
+                "achievedTime": 1736223558807
+            },
+            {
+                "challengeId": 303506,
+                "percentile": 0.001,
+                "level": "GOLD",
+                "value": 1.0,
+                "achievedTime": 1736013382286
+            },
+            {
+                "challengeId": 303507,
+                "percentile": 0.001,
+                "level": "GOLD",
+                "value": 1.0,
+                "achievedTime": 1736387835288
+            },
+            {
+                "challengeId": 303512,
+                "percentile": 0.001,
+                "level": "GOLD",
+                "value": 2.0,
+                "achievedTime": 1736048198718
+            },
+            {
+                "challengeId": 303513,
+                "percentile": 0.001,
+                "level": "GOLD",
+                "value": 2.0,
+                "achievedTime": 1735956639210
+            }
+        ]
+    },
+    {
+        "riotid": "Azure Arbitrator#NA1",
+        "puuid": "JT6VwSmYnOE8JvaDXGK3nRNEgZVRQsPea9iuCsnrkqgtmMFmqWg0_PixejV-NXccP8GBjwb-ZOyfMg",
+        "discord": "juli_n",
+        "challenges": [
+            {
+                "challengeId": 303500,
+                "percentile": 0.001,
+                "level": "PLATINUM",
+                "value": 400.0,
+                "achievedTime": 1736621537917
+            },
+            {
+                "challengeId": 303501,
+                "percentile": 0.002,
+                "level": "GOLD",
+                "value": 2.0,
+                "achievedTime": 1736112495679
+            },
+            {
+                "challengeId": 303502,
+                "percentile": 0.001,
+                "level": "GOLD",
+                "value": 2.0,
+                "achievedTime": 1736016656647
+            },
+            {
+                "challengeId": 303503,
+                "percentile": 0.001,
+                "level": "PLATINUM",
+                "value": 4.0,
+                "achievedTime": 1736658445627
+            },
+            {
+                "challengeId": 303508,
+                "percentile": 0.001,
+                "level": "GOLD",
+                "value": 2.0,
+                "achievedTime": 1736115190082
+            },
+            {
+                "challengeId": 303509,
+                "percentile": 0.001,
+                "level": "GOLD",
+                "value": 1.0,
+                "achievedTime": 1736019406090
+            },
+            {
+                "challengeId": 303510,
+                "percentile": 0.001,
+                "level": "PLATINUM",
+                "value": 3.0,
+                "achievedTime": 1736394213940
+            },
+            {
+                "challengeId": 303511,
+                "percentile": 0.001,
+                "level": "GOLD",
+                "value": 1.0,
+                "achievedTime": 1736015153449
+            },
+            {
+                "challengeId": 303504,
+                "percentile": 0.001,
+                "level": "PLATINUM",
+                "value": 3.0,
+                "achievedTime": 1736395837121
+            },
+            {
+                "challengeId": 303505,
+                "percentile": 0.001,
+                "level": "PLATINUM",
+                "value": 3.0,
+                "achievedTime": 1736225432702
+            },
+            {
+                "challengeId": 303506,
+                "percentile": 0.001,
+                "level": "GOLD",
+                "value": 1.0,
+                "achievedTime": 1736013382286
+            },
+            {
+                "challengeId": 303507,
+                "percentile": 0.001,
+                "level": "GOLD",
+                "value": 2.0,
+                "achievedTime": 1736118561627
+            },
+            {
+                "challengeId": 303512,
+                "percentile": 0.001,
+                "level": "GOLD",
+                "value": 2.0,
+                "achievedTime": 1736048198718
+            },
+            {
+                "challengeId": 303513,
+                "percentile": 0.001,
+                "level": "PLATINUM",
+                "value": 3.0,
+                "achievedTime": 1736619853854
+            }
+        ]
+    },
+    {
+        "riotid": "Savantre#9652",
+        "puuid": "HDO9mVrO5Crs0zHwpauDhvbaydC-WdL9d3opEmswlqW8X-TTHA-BJtoHtQ1NMoC3gy8q9pNg_smEow",
+        "discord": "savantre",
+        "challenges": [
+            {
+                "challengeId": 303500,
+                "percentile": 0.001,
+                "level": "SILVER",
+                "value": 150.0,
+                "achievedTime": 1736621538237
+            },
+            {
+                "challengeId": 303501,
+                "percentile": 0.002,
+                "level": "GOLD",
+                "value": 1.0,
+                "achievedTime": 1736112495679
+            },
+            {
+                "challengeId": 303508,
+                "percentile": 0.001,
+                "level": "GOLD",
+                "value": 1.0,
+                "achievedTime": 1736115190082
+            },
+            {
+                "challengeId": 303504,
+                "percentile": 0.002,
+                "level": "GOLD",
+                "value": 2.0,
+                "achievedTime": 1736117538193
+            },
+            {
+                "challengeId": 303505,
+                "percentile": 0.002,
+                "level": "GOLD",
+                "value": 1.0,
+                "achievedTime": 1735754822258
+            },
+            {
+                "challengeId": 303507,
+                "percentile": 0.001,
+                "level": "GOLD",
+                "value": 1.0,
+                "achievedTime": 1736118561627
+            },
+            {
+                "challengeId": 303513,
+                "percentile": 0.001,
+                "level": "GOLD",
+                "value": 1.0,
+                "achievedTime": 1736619853854
+            }
+        ]
+    },
+    {
+        "riotid": "Bungalow#NA1",
+        "puuid": "jWkVqrVbGb2miQnnk4S3YT1nvxC27xbcNHe10PVZ3m86hfmmckDxsI09Q0t0Vbaw98hvILBxyrfQ_A",
+        "discord": "bungalowlol",
+        "challenges": [
+            {
+                "challengeId": 303500,
+                "percentile": 0.001,
+                "level": "GOLD",
+                "value": 325.0,
+                "achievedTime": 1736118242443
+            },
+            {
+                "challengeId": 303501,
+                "percentile": 0.002,
+                "level": "GOLD",
+                "value": 1.0,
+                "achievedTime": 1705466594355
+            },
+            {
+                "challengeId": 303502,
+                "percentile": 0.001,
+                "level": "GOLD",
+                "value": 1.0,
+                "achievedTime": 1736016656647
+            },
+            {
+                "challengeId": 303503,
+                "percentile": 0.002,
+                "level": "GOLD",
+                "value": 1.0,
+                "achievedTime": 1736218576286
+            },
+            {
+                "challengeId": 303508,
+                "percentile": 0.001,
+                "level": "GOLD",
+                "value": 1.0,
+                "achievedTime": 1736221625595
+            },
+            {
+                "challengeId": 303509,
+                "percentile": 0.001,
+                "level": "GOLD",
+                "value": 1.0,
+                "achievedTime": 1736019406090
+            },
+            {
+                "challengeId": 303510,
+                "percentile": 0.001,
+                "level": "GOLD",
+                "value": 1.0,
+                "achievedTime": 1698557130721
+            },
+            {
+                "challengeId": 303511,
+                "percentile": 0.001,
+                "level": "GOLD",
+                "value": 1.0,
+                "achievedTime": 1736015153449
+            },
+            {
+                "challengeId": 303504,
+                "percentile": 0.002,
+                "level": "GOLD",
+                "value": 1.0,
+                "achievedTime": 1736117538193
+            },
+            {
+                "challengeId": 303505,
+                "percentile": 0.002,
+                "level": "GOLD",
+                "value": 2.0,
+                "achievedTime": 1736223558807
+            },
+            {
+                "challengeId": 303506,
+                "percentile": 0.001,
+                "level": "GOLD",
+                "value": 2.0,
+                "achievedTime": 1663544440305
+            },
+            {
+                "challengeId": 303507,
+                "percentile": 0.001,
+                "level": "GOLD",
+                "value": 2.0,
+                "achievedTime": 1736118561627
+            },
+            {
+                "challengeId": 303512,
+                "percentile": 0.001,
+                "level": "GOLD",
+                "value": 1.0,
+                "achievedTime": 1663542791433
+            },
+            {
+                "challengeId": 303513,
+                "percentile": 0.001,
+                "level": "GOLD",
+                "value": 1.0,
+                "achievedTime": 1735956639210
+            }
+        ]
+    },
+    {
+        "riotid": "Youngst3r Joey#NA1",
+        "puuid": "eOQoRAVNBkK24chVWGJ8YjALfMEz5fuNf28qQ3dw-tGdp0mdNiiUlUjGGnY_3xEjEFzxdgLN-E3HBg",
+        "discord": "youngst3r_joey",
+        "challenges": [
+            {
+                "challengeId": 303500,
+                "percentile": 0.001,
+                "level": "GOLD",
+                "value": 225.0,
+                "achievedTime": 1736659696928
+            },
+            {
+                "challengeId": 303501,
+                "percentile": 0.002,
+                "level": "GOLD",
+                "value": 1.0,
+                "achievedTime": 1736391833822
+            },
+            {
+                "challengeId": 303502,
+                "percentile": 0.001,
+                "level": "GOLD",
+                "value": 2.0,
+                "achievedTime": 1663016519340
+            },
+            {
+                "challengeId": 303503,
+                "percentile": 0.002,
+                "level": "GOLD",
+                "value": 2.0,
+                "achievedTime": 1736658445627
+            },
+            {
+                "challengeId": 303510,
+                "percentile": 0.001,
+                "level": "GOLD",
+                "value": 1.0,
+                "achievedTime": 1736394213940
+            },
+            {
+                "challengeId": 303504,
+                "percentile": 0.002,
+                "level": "GOLD",
+                "value": 1.0,
+                "achievedTime": 1736395837121
+            },
+            {
+                "challengeId": 303505,
+                "percentile": 0.002,
+                "level": "GOLD",
+                "value": 1.0,
+                "achievedTime": 1661666968643
+            },
+            {
+                "challengeId": 303507,
+                "percentile": 0.001,
+                "level": "GOLD",
+                "value": 1.0,
+                "achievedTime": 1667339269818
+            },
+            {
+                "challengeId": 303512,
+                "percentile": 0.001,
+                "level": "GOLD",
+                "value": 1.0,
+                "achievedTime": 1736471541265
+            },
+            {
+                "challengeId": 303513,
+                "percentile": 0.001,
+                "level": "GOLD",
+                "value": 2.0,
+                "achievedTime": 1659479417843
+            }
+        ]
+    },
+    {
+        "riotid": "Loi Drifter#NA1",
+        "puuid": "eq1wWr10PtjNO7EJ3FVpcTyoyCrqxFngGNoTW_8iadrLi6JD9sd2ZI_DcAJbfrGxpR8Y2Nw3CyU4NA",
+        "discord": "drifter0320",
+        "challenges": [
+            {
+                "challengeId": 303500,
+                "percentile": 0.001,
+                "level": "GOLD",
+                "value": 315.0,
+                "achievedTime": 1736221029882
+            },
+            {
+                "challengeId": 303501,
+                "percentile": 0.002,
+                "level": "GOLD",
+                "value": 1.0,
+                "achievedTime": 1736112495679
+            },
+            {
+                "challengeId": 303502,
+                "percentile": 0.001,
+                "level": "GOLD",
+                "value": 1.0,
+                "achievedTime": 1736016656647
+            },
+            {
+                "challengeId": 303503,
+                "percentile": 0.001,
+                "level": "PLATINUM",
+                "value": 3.0,
+                "achievedTime": 1736659847478
+            },
+            {
+                "challengeId": 303508,
+                "percentile": 0.001,
+                "level": "GOLD",
+                "value": 1.0,
+                "achievedTime": 1736115190082
+            },
+            {
+                "challengeId": 303510,
+                "percentile": 0.001,
+                "level": "GOLD",
+                "value": 1.0,
+                "achievedTime": 1736049573232
+            },
+            {
+                "challengeId": 303511,
+                "percentile": 0.001,
+                "level": "GOLD",
+                "value": 1.0,
+                "achievedTime": 1736015153449
+            },
+            {
+                "challengeId": 303504,
+                "percentile": 0.002,
+                "level": "GOLD",
+                "value": 1.0,
+                "achievedTime": 1736290266660
+            },
+            {
+                "challengeId": 303505,
+                "percentile": 0.002,
+                "level": "GOLD",
+                "value": 1.0,
+                "achievedTime": 1735754822258
+            },
+            {
+                "challengeId": 303506,
+                "percentile": 0.001,
+                "level": "GOLD",
+                "value": 1.0,
+                "achievedTime": 1736013382286
+            },
+            {
+                "challengeId": 303507,
+                "percentile": 0.001,
+                "level": "GOLD",
+                "value": 1.0,
+                "achievedTime": 1736387835288
+            },
+            {
+                "challengeId": 303512,
+                "percentile": 0.001,
+                "level": "GOLD",
+                "value": 1.0,
+                "achievedTime": 1736048198718
+            },
+            {
+                "challengeId": 303513,
+                "percentile": 0.001,
+                "level": "GOLD",
+                "value": 1.0,
+                "achievedTime": 1736619853854
+            }
+        ]
+    }
+]
