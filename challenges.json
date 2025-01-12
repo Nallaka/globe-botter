@@ -1,0 +1,67 @@
+[
+    {
+        "challenge_id": 303501,
+        "region_name": "Bandle City",
+        "challenge_name": "5 Under 5'"
+    },
+    {
+        "challenge_id": 303502,
+        "region_name": "Bilgewater",
+        "challenge_name": "All Hands on Deck"
+    },
+    {
+        "challenge_id": 303503,
+        "region_name": "Demacia",
+        "challenge_name": "FOR DEMACIA"
+    },
+    {
+        "challenge_id": 303504,
+        "region_name": "Freljord",
+        "challenge_name": "Ice, Ice, Baby"
+    },
+    {
+        "challenge_id": 303505,
+        "region_name": "Ionia",
+        "challenge_name": "Everybody was Wuju Fighting"
+    },
+    {
+        "challenge_id": 303506,
+        "region_name": "Ixtal",
+        "challenge_name": "Elemental, My Dear Watson"
+    },
+    {
+        "challenge_id": 303507,
+        "region_name": "Noxus",
+        "challenge_name": "Strength Above All"
+    },
+    {
+        "challenge_id": 303508,
+        "region_name": "Piltover",
+        "challenge_name": "Calculated"
+    },
+    {
+        "challenge_id": 303509,
+        "region_name": "Shadow Isles",
+        "challenge_name": "Spooky Scary Skeletons"
+    },
+    {
+        "challenge_id": 303510,
+        "region_name": "Shurima",
+        "challenge_name": "The Sun Disc Never Sets"
+    },
+    {
+        "challenge_id": 303511,
+        "region_name": "Targon",
+        "challenge_name": "Peak Performance"
+    },
+    {
+        "challenge_id": 303512,
+        "region_name": "Void",
+        "challenge_name": "(Inhuman Screeching Sounds)"
+    },
+    {
+        "challenge_id": 303513,
+        "region_name": "Zaun",
+        "challenge_name": "Chemtech Comrades"
+    }
+]
