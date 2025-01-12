@@ -649,5 +649,96 @@
                 "achievedTime": 1736619853854
             }
         ]
+    },
+    {
+        "riotid": "Flashcruise#NA1",
+        "puuid": "Q3lIG-3yRfJMqaomO4sCwa9e9VjUZyoLFsxdJBygBY72CQW5BqEJDj1YGdXc71WF5NYyt-UcanzHGw",
+        "discord": "flashcruise",
+        "challenges": [
+            {
+                "challengeId": 303500,
+                "percentile": 0.001,
+                "level": "GOLD",
+                "value": 290.0,
+                "achievedTime": 1736309576608
+            },
+            {
+                "challengeId": 303501,
+                "percentile": 0.002,
+                "level": "GOLD",
+                "value": 1.0,
+                "achievedTime": 1736112495679
+            },
+            {
+                "challengeId": 303502,
+                "percentile": 0.001,
+                "level": "GOLD",
+                "value": 1.0,
+                "achievedTime": 1736310245625
+            },
+            {
+                "challengeId": 303503,
+                "percentile": 0.002,
+                "level": "GOLD",
+                "value": 1.0,
+                "achievedTime": 1736306783175
+            },
+            {
+                "challengeId": 303508,
+                "percentile": 0.001,
+                "level": "GOLD",
+                "value": 2.0,
+                "achievedTime": 1736115190082
+            },
+            {
+                "challengeId": 303509,
+                "percentile": 0.001,
+                "level": "GOLD",
+                "value": 1.0,
+                "achievedTime": 1736019406090
+            },
+            {
+                "challengeId": 303510,
+                "percentile": 0.001,
+                "level": "GOLD",
+                "value": 1.0,
+                "achievedTime": 1736308021620
+            },
+            {
+                "challengeId": 303504,
+                "percentile": 0.002,
+                "level": "GOLD",
+                "value": 1.0,
+                "achievedTime": 1736117538193
+            },
+            {
+                "challengeId": 303505,
+                "percentile": 0.001,
+                "level": "PLATINUM",
+                "value": 3.0,
+                "achievedTime": 1736225432702
+            },
+            {
+                "challengeId": 303507,
+                "percentile": 0.001,
+                "level": "GOLD",
+                "value": 1.0,
+                "achievedTime": 1736118561627
+            },
+            {
+                "challengeId": 303512,
+                "percentile": 0.001,
+                "level": "GOLD",
+                "value": 1.0,
+                "achievedTime": 1736471541265
+            },
+            {
+                "challengeId": 303513,
+                "percentile": 0.001,
+                "level": "GOLD",
+                "value": 2.0,
+                "achievedTime": 1736476381962
+            }
+        ]
     }
 ]
