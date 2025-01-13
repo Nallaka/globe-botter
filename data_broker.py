@@ -369,7 +369,7 @@ def optimal_region_call(call):
         }
         for result in region_results:
             #print(result["region"])
-            region_values[result["region"]] += game_value(result["value"])
+            region_values[result["region"]] += game_value(int(result["value"]))
         #print(region_results)
         sorted_region_values = {k: v for k, v in sorted(region_values.items(), key=lambda item: item[1], reverse=True)}
         print(sorted_region_values)
