@@ -251,7 +251,6 @@ def progress_player(playername):
         embeded2.add_field(name="Globetrotter Progress", value=globetrotter_progress(), inline=False)
         return embeded, embeded2
 
-
 def globetrotter_progress():
     embed = discord.Embed(title="Globetrotter Progress")
     globetrotter = ""
