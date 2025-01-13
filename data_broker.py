@@ -1,5 +1,6 @@
 import json
 
+import discord
 from riotwatcher import LolWatcher, ApiError, RiotWatcher
 from riotwatcher import _apis
 
@@ -128,6 +129,8 @@ rank_cutoffs = {
 def progress_all():
     progress_string = ""
     regions = []
+    embeded = discord.Embed()
+
     with open("challenges.json", "r") as challenges:
         regions = json.load(challenges)
 
@@ -135,7 +138,8 @@ def progress_all():
         players = json.load(player_list)
         ranksubset = []
         for region in regions:
-            progress_string += region["region_name"] + ":\n"
+            progress_string = ""
+            #progress_string += region["region_name"] + ":\n"
             region_results = []
             for player in players:
                 for challenge in player["challenges"]:
@@ -156,12 +160,18 @@ def progress_all():
                         progress_string += "\t" + rank + ": "
                         player_string = player_string[:-2]
                         progress_string += f"({i}/{cutoff}): {player_string}\n"
-        progress_string += "\nGlobetrotter Progress:\n" + globetrotter_progress()
-        return progress_string
+            embeded.add_field(name=f"{region["region_name"]}:\n", value=progress_string, inline=False)
+
+        #progress_string += "\nGlobetrotter Progress:\n" + globetrotter_progress()
+        embeded2 = discord.Embed()
+        embeded2.add_field(name="Globetrotter Progress", value=globetrotter_progress(), inline=False)
+        return embeded, embeded2
 
 def progress_call(call):
     progress_string = ""
     regions = []
+    embeded = discord.Embed()
+
     with open("challenges.json", "r") as challenges:
         regions = json.load(challenges)
 
@@ -169,7 +179,8 @@ def progress_call(call):
         players = json.load(player_list)
         ranksubset = []
         for region in regions:
-            progress_string += region["region_name"] + ":\n"
+            progress_string = ""
+            #progress_string += region["region_name"] + ":\n"
             region_results = []
             for player in players:
                 if player["discord"] in call:
@@ -191,12 +202,18 @@ def progress_call(call):
                         progress_string += "\t" + rank + ": "
                         player_string = player_string[:-2]
                         progress_string += f"({i}/{cutoff}): {player_string}\n"
-            progress_string += "\n"
-        return progress_string
+            embeded.add_field(name=f"{region["region_name"]}:\n", value=progress_string, inline=False)
+
+        #progress_string += "\nGlobetrotter Progress:\n" + globetrotter_progress()
+        embeded2 = discord.Embed()
+        embeded2.add_field(name="Globetrotter Progress", value=globetrotter_progress(), inline=False)
+        return embeded, embeded2
 
 def progress_player(playername):
     progress_string = ""
     regions = []
+    embeded = discord.Embed()
+
     with open("challenges.json", "r") as challenges:
         regions = json.load(challenges)
 
@@ -204,11 +221,10 @@ def progress_player(playername):
         players = json.load(player_list)
         ranksubset = []
         for region in regions:
-            progress_string += region["region_name"] + ":\n"
+            progress_string = ""
+            #progress_string += region["region_name"] + ":\n"
             region_results = []
             for player in players:
-                if player["discord"] == playername:
-                    print(player["discord"])
                 for challenge in player["challenges"]:
                     if challenge.get('challengeId') == region["challenge_id"] and player["discord"] == playername:
                         result = challenge
@@ -227,16 +243,26 @@ def progress_player(playername):
                         progress_string += "\t" + rank + ": "
                         player_string = player_string[:-2]
                         progress_string += f"({i}/{cutoff}): {player_string}\n"
+            embeded.add_field(name=f"{region["region_name"]}:\n", value=progress_string, inline=False)
+
         #progress_string += "\nGlobetrotter Progress:\n" + globetrotter_progress()
-        return progress_string
+        embeded2 = discord.Embed()
+        embeded2.add_field(name="Globetrotter Progress", value=globetrotter_progress(), inline=False)
+        return embeded, embeded2
 
 
 def globetrotter_progress():
+    embed = discord.Embed(title="Globetrotter Progress")
     globetrotter = ""
     with open("players.json", "r") as player_list:
         players = json.load(player_list)
+        globeplayer = []
         for player in players:
             globetrotter += player["riotid"] + ": "
             globeprog = [globe for globe in player["challenges"] if globe["challengeId"] == 303500]
             globetrotter += f"{int(globeprog[0]["value"])} / 620 ({globeprog[0]["level"]})\n"
-    return globetrotter
+            globeplayer.append({"name": player["riotid"], "progress": int(globeprog[0]["value"]), "level": globeprog[0]["level"]})
+        sorted_globeplayer = sorted(globeplayer, key=lambda d: d['progress'], reverse=True)
+        for player in sorted_globeplayer:
+            embed.add_field(name=player["name"], value=f"{int(player["progress"])} / 620 ({player["level"]})\n", inline=False)
+    return embed

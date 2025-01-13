@@ -747,5 +747,40 @@
                 "achievedTime": 1736476381962
             }
         ]
+    },
+    {
+        "riotid": "Atreus Spear#NA1",
+        "puuid": "U6JtT5lNJ_OqkhNiVDdrgjHGDuc6Tq5A6A9wuTNSbwOhmJO0619edysjxIeL7XePW3w3uNx33szo5w",
+        "discord": "atreus_spear",
+        "challenges": [
+            {
+                "challengeId": 303500,
+                "percentile": 0.003,
+                "level": "IRON",
+                "value": 75.0,
+                "achievedTime": 1736395470663
+            },
+            {
+                "challengeId": 303501,
+                "percentile": 0.002,
+                "level": "GOLD",
+                "value": 1.0,
+                "achievedTime": 1736391833822
+            },
+            {
+                "challengeId": 303510,
+                "percentile": 0.001,
+                "level": "GOLD",
+                "value": 1.0,
+                "achievedTime": 1736394213940
+            },
+            {
+                "challengeId": 303504,
+                "percentile": 0.002,
+                "level": "GOLD",
+                "value": 1.0,
+                "achievedTime": 1736395837121
+            }
+        ]
     }
 ]

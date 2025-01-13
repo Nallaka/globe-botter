@@ -102,9 +102,9 @@ async def selfregister(ctx, riotid):
     await ctx.channel.send(f"League Account {riotid} registered successfully. Linked to {ctx.message.author.name} on Discord")
 
 @bot.command()
-async def adminregister(ctx, discordname, riotid):
-    register_player(discordname, riotid)
-    await ctx.channel.send(f"League Account {riotid} registered successfully. Linked to {discordname} on Discord")
+async def adminregister(ctx, user: discord.User, riotid):
+    register_player(user.name, riotid)
+    await ctx.channel.send(f"League Account {riotid} registered successfully. Linked to {user.name} on Discord")
 
 @bot.command()
 async def updateall(ctx):
@@ -114,10 +114,13 @@ async def updateall(ctx):
 @bot.command()
 async def progressall(ctx):
     update_players()
-    await ctx.channel.send(progress_all())
+    message1, message2 = progress_all()
+
+    await ctx.channel.send(embed=message1)
+    await ctx.channel.send(embed=message2)
 
 @bot.command()
-async def progresscall(ctx):
+async def progresscall(ctx, exclude="", *args: discord.User):
 
     if not ctx.author.voice:
         await ctx.send("You are not in a voice channel!")
@@ -129,23 +132,43 @@ async def progresscall(ctx):
     for member in channel.members:
         players.append(str(member))
 
+    if exclude == "exclude":
+        for player_to_exclude in args:
+            print(player_to_exclude)
+
+            players.remove(player_to_exclude.name)
+
     if players:
         await ctx.send(f"Users in {channel.name}: {', '.join(players)}")
         update_players()
-        await ctx.channel.send(progress_call(players))
+        message1, message2 = progress_call(players)
+
+        await ctx.channel.send(embed=message1)
+        #await ctx.channel.send(embed=message2)
     else:
         await ctx.send("No one is in this voice channel.")
 
 @bot.command()
 async def globetrotterprogressall(ctx):
-    await ctx.send(globetrotter_progress())
+    await ctx.send(embed=globetrotter_progress())
+
+@bot.command()
+async def ladder(ctx):
+    await ctx.send(embed=globetrotter_progress())
 
 @bot.command()
 async def playerprogress(ctx, user: discord.User):
-    await ctx.send(progress_player(user.name))
+    update_players()
+    message1, message2 = progress_player(user.name)
+
+    await ctx.channel.send(embed=message1)
+    #await ctx.channel.send(embed=message2)
 
 @bot.command()
 async def selfprogress(ctx):
-    await ctx.send(progress_player(ctx.author.name))
+    update_players()
+    message1, message2 = progress_player(ctx.author.name)
+
+    await ctx.channel.send(embed=message1)
 
 bot.run(bot_token)
