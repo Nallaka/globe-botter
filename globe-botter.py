@@ -5,7 +5,7 @@ import discord
 from discord.ext import commands
 from discord import app_commands
 from data_broker import register_player, update_players, progress_all, progress_call, globetrotter_progress, \
-    progress_player
+    progress_player, optimal_region, optimal_region_call
 
 with open("keys.json", "r") as keys:
     api_keys = json.load(keys)
@@ -170,5 +170,35 @@ async def selfprogress(ctx):
     message1, message2 = progress_player(ctx.author.name)
 
     await ctx.channel.send(embed=message1)
+
+@bot.command()
+async def optimal(ctx):
+    await ctx.channel.send(embed=optimal_region())
+
+@bot.command()
+async def optimalcall(ctx, exclude="", *args: discord.User):
+    if not ctx.author.voice:
+        await ctx.send("You are not in a voice channel!")
+        return
+
+    channel = ctx.author.voice.channel
+    players = []
+
+    for member in channel.members:
+        players.append(str(member))
+
+    if exclude == "exclude":
+        for player_to_exclude in args:
+            print(player_to_exclude)
+
+            players.remove(player_to_exclude.name)
+
+    if players:
+        await ctx.send(f"Users in {channel.name}: {', '.join(players)}")
+        update_players()
+
+        await ctx.channel.send(embed=optimal_region_call(players))
+    else:
+        await ctx.send("No one is in this voice channel.")
 
 bot.run(bot_token)

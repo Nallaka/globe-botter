@@ -1,4 +1,5 @@
 import json
+from math import trunc
 
 import discord
 from riotwatcher import LolWatcher, ApiError, RiotWatcher
@@ -265,4 +266,115 @@ def globetrotter_progress():
         sorted_globeplayer = sorted(globeplayer, key=lambda d: d['progress'], reverse=True)
         for player in sorted_globeplayer:
             embed.add_field(name=player["name"], value=f"{int(player["progress"])} / 620 ({player["level"]})\n", inline=False)
+    return embed
+
+cutoffs = [10,6,3,1,-1]
+cutoff_value = {
+    1: 25,
+    3: 15,
+    6: 20,
+    10: 0
+}
+def game_value(game_count):
+    if game_count == 0:
+        return 25
+    cutoff = 99
+    for i in cutoffs:
+        if i > game_count:
+            cutoff = i
+    if cutoff - game_count != 0:
+        return cutoff_value[cutoff] / (cutoff - game_count)
+    return cutoff_value[cutoff]
+
+def optimal_region():
+    embed = discord.Embed(title="Optimal Choice")
+    with open("challenges.json", "r") as challenges:
+        regions = json.load(challenges)
+
+    with open("players.json", "r") as player_list:
+        players = json.load(player_list)
+        ranksubset = []
+        region_results = []
+        for region in regions:
+            progress_string = ""
+            #progress_string += region["region_name"] + ":\n"
+            for player in players:
+                for challenge in player["challenges"]:
+                    if challenge.get('challengeId') == region["challenge_id"]:
+                        result = challenge
+                        result["player"] = player["riotid"]
+                        result["region"] = region["region_name"]
+                        region_results.append(result)
+
+        region_values = {
+            "Bandle City": 0,
+            "Bilgewater": 0,
+            "Demacia": 0,
+            "Frelijord": 0,
+            "Ionia": 0,
+            "Ixtal": 0,
+            "Noxus": 0,
+            "Piltover": 0,
+            "Shadow Isles": 0,
+            "Shurima": 0,
+            "Targon": 0,
+            "Void": 0,
+            "Zaun": 0,
+        }
+        for result in region_results:
+            #print(result["region"])
+            region_values[result["region"]] += game_value(int(result["value"]))
+
+        sorted_region_values = {k: v for k, v in sorted(region_values.items(), key=lambda item: item[1], reverse=True)}
+        print(sorted_region_values)
+        for k,v in sorted_region_values.items():
+            embed.add_field(name=k, value=round(v), inline=False)
+
+    return embed
+
+def optimal_region_call(call):
+    embed = discord.Embed(title="Optimal Choice")
+    with open("challenges.json", "r") as challenges:
+        regions = json.load(challenges)
+
+    with open("players.json", "r") as player_list:
+        players = json.load(player_list)
+        ranksubset = []
+        region_results = []
+        for region in regions:
+            progress_string = ""
+            #progress_string += region["region_name"] + ":\n"
+            for player in players:
+                if player["discord"] in call:
+                    for challenge in player["challenges"]:
+                        if challenge.get('challengeId') == region["challenge_id"]:
+                            result = challenge
+                            result["player"] = player["riotid"]
+                            result["region"] = region["region_name"]
+                            region_results.append(result)
+
+        region_values = {
+            "Bandle City": 0,
+            "Bilgewater": 0,
+            "Demacia": 0,
+            "Frelijord": 0,
+            "Ionia": 0,
+            "Ixtal": 0,
+            "Noxus": 0,
+            "Piltover": 0,
+            "Shadow Isles": 0,
+            "Shurima": 0,
+            "Targon": 0,
+            "Void": 0,
+            "Zaun": 0,
+        }
+        for result in region_results:
+            #print(result["region"])
+            region_values[result["region"]] += game_value(result["value"])
+        #print(region_results)
+        sorted_region_values = {k: v for k, v in sorted(region_values.items(), key=lambda item: item[1], reverse=True)}
+        print(sorted_region_values)
+        for k,v in sorted_region_values.items():
+            embed.add_field(name=k, value=round(v), inline=False)
+
     return embed
