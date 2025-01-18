@@ -83,7 +83,9 @@ async def shadowisles(ctx):
 
 @bot.hybrid_command()
 async def shurima(ctx):
+    await ctx.channel.send(file=discord.File('./regions/shurima_sunday.gif'))
     await ctx.channel.send(file=discord.File('./regions/shurima.png'))
+
 
 @bot.hybrid_command()
 async def targon(ctx):
