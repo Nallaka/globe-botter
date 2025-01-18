@@ -33,6 +33,17 @@ def get_current_challenge_progress(puuid):
 
     parsed_challenges = [challenge for challenge in challenges if challenge.get('challengeId') in range(303500,303514)]
 
+    for challenge_id in range(303500,303514):
+        if not any(challenge['challengeId'] == challenge_id for challenge in parsed_challenges):
+            placeholder_challenge = {
+                "challengeId": challenge_id,
+                "percentile": 0.0,
+                "level": "IRON",
+                "value": 0.0,
+                "achievedTime": 0
+            }
+            parsed_challenges.append(placeholder_challenge)
+
     return parsed_challenges
 
 def parse_regions():
@@ -321,7 +332,7 @@ def optimal_region():
             "Zaun": 0,
         }
         for result in region_results:
-            #print(result["region"])
+            print(result["region"])
             region_values[result["region"]] += game_value(int(result["value"]))
 
         sorted_region_values = {k: v for k, v in sorted(region_values.items(), key=lambda item: item[1], reverse=True)}

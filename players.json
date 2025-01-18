@@ -290,6 +290,27 @@
                 "level": "PLATINUM",
                 "value": 3.0,
                 "achievedTime": 1737171490713
+            },
+            {
+                "challengeId": 303506,
+                "percentile": 0.0,
+                "level": "IRON",
+                "value": 0.0,
+                "achievedTime": 0
+            },
+            {
+                "challengeId": 303509,
+                "percentile": 0.0,
+                "level": "IRON",
+                "value": 0.0,
+                "achievedTime": 0
+            },
+            {
+                "challengeId": 303511,
+                "percentile": 0.0,
+                "level": "IRON",
+                "value": 0.0,
+                "achievedTime": 0
             }
         ]
     },
@@ -381,6 +402,20 @@
                 "level": "PLATINUM",
                 "value": 3.0,
                 "achievedTime": 1737171490713
+            },
+            {
+                "challengeId": 303506,
+                "percentile": 0.0,
+                "level": "IRON",
+                "value": 0.0,
+                "achievedTime": 0
+            },
+            {
+                "challengeId": 303511,
+                "percentile": 0.0,
+                "level": "IRON",
+                "value": 0.0,
+                "achievedTime": 0
             }
         ]
     },
