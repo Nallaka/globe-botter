@@ -161,7 +161,7 @@ def progress_all():
                         progress_string += "\t" + rank + ": "
                         player_string = player_string[:-2]
                         progress_string += f"({i}/{cutoff}): {player_string}\n"
-            embeded.add_field(name=f"{region["region_name"]}:\n", value=progress_string, inline=False)
+            embeded.add_field(name=f"{region['region_name']}:\n", value=progress_string, inline=False)
 
         #progress_string += "\nGlobetrotter Progress:\n" + globetrotter_progress()
         embeded2 = discord.Embed()
@@ -264,7 +264,7 @@ def globetrotter_progress():
             globeplayer.append({"name": player["riotid"], "progress": int(globeprog[0]["value"]), "level": globeprog[0]["level"]})
         sorted_globeplayer = sorted(globeplayer, key=lambda d: d['progress'], reverse=True)
         for player in sorted_globeplayer:
-            embed.add_field(name=player["name"], value=f"{int(player["progress"])} / 620 ({player["level"]})\n", inline=False)
+            embed.add_field(name=player["name"], value=f"{int(player['progress'])} / 620 ({player['level']})\n", inline=False)
     return embed
 
 cutoffs = [10,6,3,1,-1]
