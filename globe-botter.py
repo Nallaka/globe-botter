@@ -30,6 +30,7 @@ bot = commands.Bot(command_prefix='?', description=description, intents=intents)
 
 @bot.event
 async def on_ready():
+    print(lol_watcher.lol_status_v4.platform_data("na1"))
     print(f'Logged in as {bot.user} (ID: {bot.user.id})')
     print('------')
 
