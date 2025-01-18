@@ -57,7 +57,7 @@ async def demacia(ctx):
     await ctx.channel.send(file=discord.File('./regions/demacia.png'))
 
 @bot.hybrid_command()
-async def frelijord(ctx):
+async def freljord(ctx):
     await ctx.channel.send(file=discord.File('./regions/frelijord.png'))
 
 @bot.hybrid_command()
@@ -200,5 +200,14 @@ async def optimalcall(ctx, exclude="", *args: discord.User):
         await ctx.channel.send(embed=optimal_region_call(players))
     else:
         await ctx.send("No one is in this voice channel.")
+
+@bot.command()
+async def exclude(ctx, user:discord.Member=None):
+    if user == None: # if no user is passed..
+        user = ctx.author # ..make the command author the user
+    message = "Exclusion!"
+    embed = discord.Embed(title=message)
+    embed.add_field(name="Excluded:", value="Excluded once again, racism triumphs!")
+    await user.send(embed=embed)
 
 bot.run(bot_token)

@@ -356,7 +356,7 @@ def optimal_region_call(call):
             "Bandle City": 0,
             "Bilgewater": 0,
             "Demacia": 0,
-            "Frelijord": 0,
+            "Freljord": 0,
             "Ionia": 0,
             "Ixtal": 0,
             "Noxus": 0,
