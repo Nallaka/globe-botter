@@ -206,6 +206,7 @@ async def optimalcall(ctx, exclude="", *args: discord.User):
 
 @bot.command()
 async def exclude(ctx, user:discord.Member=None):
+    user.
     if user == None: # if no user is passed..
         user = ctx.author # ..make the command author the user
     message = "Exclusion!"
