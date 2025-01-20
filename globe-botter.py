@@ -59,6 +59,7 @@ async def demacia(ctx):
 
 @bot.hybrid_command()
 async def freljord(ctx):
+    await ctx.channel.send(file=discord.File('./regions/wide_nunu.gif'))
     await ctx.channel.send(file=discord.File('./regions/frelijord.png'))
 
 @bot.hybrid_command()
