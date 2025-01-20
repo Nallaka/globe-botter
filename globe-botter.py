@@ -206,9 +206,14 @@ async def optimalcall(ctx, exclude="", *args: discord.User):
 
 @bot.command()
 async def exclude(ctx, user:discord.Member=None):
-    user.
     if user == None: # if no user is passed..
         user = ctx.author # ..make the command author the user
+    if user.name == "nallaka":
+        message = "Denied!"
+        embed = discord.Embed(title=message)
+        embed.add_field(name="DENIED:", value="I apologize, but user \"nallaka\" is not eligible for exclusion due to resistance to \"racism\".\nPlease try a different user." )
+        await ctx.channel.send(embed=embed)
+        return
     message = "Exclusion!"
     embed = discord.Embed(title=message)
     embed.add_field(name="Excluded:", value="Excluded once again, racism triumphs!")
