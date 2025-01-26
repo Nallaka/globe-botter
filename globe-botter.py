@@ -220,4 +220,11 @@ async def exclude(ctx, user:discord.Member=None):
     embed.add_field(name="Excluded:", value="Excluded once again, racism triumphs!")
     await user.send(embed=embed)
 
+@bot.command()
+async def fixit(ctx):
+    embed = discord.Embed(title="Fix It")
+    embed.add_field(name="What a great suggestion! You should implement it!", value="https://github.com/Nallaka/globe-botter")
+
+    await ctx.channel.send(embed=embed)
+
 bot.run(bot_token)
