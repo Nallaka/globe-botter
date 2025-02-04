@@ -283,7 +283,7 @@ cutoff_value = {
     1: 25,
     3: 15,
     6: 20,
-    10: 0
+    10: 40
 }
 def game_value(game_count):
     if game_count == 0:

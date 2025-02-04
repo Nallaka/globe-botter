@@ -227,4 +227,10 @@ async def fixit(ctx):
 
     await ctx.channel.send(embed=embed)
 
+@bot.command()
+async def fixfile(ctx):
+    to_replace = "]]"
+    with open("players.json", "r") as player_list:
+        data = player_list.open
+
 bot.run(bot_token)
