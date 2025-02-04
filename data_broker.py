@@ -120,7 +120,7 @@ ranks = {
     "GOLD": 3,
     "PLATINUM": 6,
     "DIAMOND": 10,
-    "MASTERS": 10
+    "MASTERS": 99
 }
 rank_names = {
     0: 'IRON',
