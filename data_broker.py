@@ -288,6 +288,8 @@ cutoff_value = {
 def game_value(game_count):
     if game_count == 0:
         return 25
+    if game_count >= 10:
+        return 0
     cutoff = 99
     for i in cutoffs:
         if i > game_count:
