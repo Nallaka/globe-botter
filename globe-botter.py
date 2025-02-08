@@ -1,3 +1,5 @@
+from pathlib import Path
+
 from riotwatcher import LolWatcher, ApiError, RiotWatcher
 from riotwatcher import _apis
 import json
@@ -243,6 +245,7 @@ def inplace_change(filename, old_string, new_string):
 
 @bot.command()
 async def fixfile(ctx):
-    inplace_change("players.json", "]]", "]")
+    file = Path('Stud.txt')
+    file.write_text(file.read_text().replace(']]', ']'))
 
 bot.run(bot_token)
