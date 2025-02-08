@@ -248,7 +248,7 @@ async def fixfile(ctx):
     with open('players.json', 'r+') as file:
         content = file.read()
         file.seek(0)
-        content.replace(']]', ']')
+        content.replace(']]', 'tjisnewtext')
         file.write(content)
 
 bot.run(bot_token)
