@@ -246,6 +246,6 @@ def inplace_change(filename, old_string, new_string):
 @bot.command()
 async def fixfile(ctx):
     file = Path('players.json')
-    file.write_text(file.read_text().replace(']]', ']'))
+    file.write_text(file.read_text().replace("]]", "]"))
 
 bot.run(bot_token)
