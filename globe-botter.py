@@ -234,7 +234,9 @@ async def fixfile(ctx):
     with open("players.json", "r") as player_list:
         data = player_list.read()
         data = data.replace(to_replace, replace_with)
-        with open("players.json", "r") as fix_file:
-            fix_file.write(data)
+        print("found and replaced")
+    with open("players.json", "r") as fix_file:
+        fix_file.write(data)
+        print("file fixed")
 
 bot.run(bot_token)
