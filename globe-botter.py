@@ -246,7 +246,7 @@ def inplace_change(filename, old_string, new_string):
 
 @bot.command()
 async def fixfile(ctx):
-    with open("players.json", 'rb+') as fh:
+    with open("./players.json", 'rb+') as fh:
         fh.seek(-2, os.SEEK_END)
         fh.truncate()
 
