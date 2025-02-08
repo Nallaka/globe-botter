@@ -227,11 +227,22 @@ async def fixit(ctx):
 
     await ctx.channel.send(embed=embed)
 
+def inplace_change(filename, old_string, new_string):
+    # Safely read the input filename using 'with'
+    with open(filename) as f:
+        s = f.read()
+        if old_string not in s:
+            print('"{old_string}" not found in {filename}.'.format(**locals()))
+            return
+
+    # Safely write the changed content, if found in the file
+    with open(filename, 'w') as f:
+        print('Changing "{old_string}" to "{new_string}" in {filename}'.format(**locals()))
+        s = s.replace(old_string, new_string)
+        f.write(s)
+
 @bot.command()
 async def fixfile(ctx):
-    with open("players.json", "rt") as fin:
-        with open("players.json", "wt") as fout:
-            for line in fin:
-                fout.write(line.replace(']]', ']'))
+    inplace_change("players.json", "]]", "]")
 
 bot.run(bot_token)
