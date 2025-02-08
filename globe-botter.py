@@ -6,6 +6,7 @@ import json
 import discord
 from discord.ext import commands
 from discord import app_commands
+import os
 from data_broker import register_player, update_players, progress_all, progress_call, globetrotter_progress, \
     progress_player, optimal_region, optimal_region_call
 
@@ -245,10 +246,8 @@ def inplace_change(filename, old_string, new_string):
 
 @bot.command()
 async def fixfile(ctx):
-    with open('players.json', 'r+') as file:
-        content = file.read()
-        file.seek(0)
-        content.replace(']]', 'tjisnewtext')
-        file.write(content)
+    with open("players.json", 'rb+') as fh:
+        fh.seek(-2, os.SEEK_END)
+        fh.truncate()
 
 bot.run(bot_token)
