@@ -230,7 +230,11 @@ async def fixit(ctx):
 @bot.command()
 async def fixfile(ctx):
     to_replace = "]]"
+    replace_with = "]"
     with open("players.json", "r") as player_list:
-        data = player_list.open
+        data = player_list.read()
+        data = data.replace(to_replace, replace_with)
+        with open("players.json", "r") as fix_file:
+            fix_file.write(data)
 
 bot.run(bot_token)
