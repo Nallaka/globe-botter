@@ -246,11 +246,11 @@ def inplace_change(filename, old_string, new_string):
         s = s.replace(old_string, new_string)
         f.write(s)
 
-@bot.command()
-async def fixfile(ctx):
-    with open("./players.json", 'rb+') as fh:
-        fh.seek(-2, os.SEEK_END)
-        fh.truncate()
+#@bot.command()
+#async def fixfile(ctx):
+#    with open("./players.json", 'rb+') as fh:
+#        fh.seek(-2, os.SEEK_END)
+#        fh.truncate()
 
 async def send_prompt(ctx):
     embed = discord.Embed(title="Call Today!")
