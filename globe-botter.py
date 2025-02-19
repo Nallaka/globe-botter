@@ -151,6 +151,7 @@ async def progresscall(ctx, exclude="", *args: discord.User):
         message1, message2 = progress_call(players)
 
         await ctx.channel.send(embed=message1)
+        await send_prompt(ctx)
         #await ctx.channel.send(embed=message2)
     else:
         await ctx.send("No one is in this voice channel.")
@@ -205,6 +206,7 @@ async def optimalcall(ctx, exclude="", *args: discord.User):
         update_players()
 
         await ctx.channel.send(embed=optimal_region_call(players))
+        await send_prompt(ctx)
     else:
         await ctx.send("No one is in this voice channel.")
 
@@ -249,5 +251,11 @@ async def fixfile(ctx):
     with open("./players.json", 'rb+') as fh:
         fh.seek(-2, os.SEEK_END)
         fh.truncate()
+
+async def send_prompt(ctx):
+    embed = discord.Embed(title="Call Today!")
+    embed.add_field(name="Democracy dies in silence:", value="https://5calls.org")
+
+    await ctx.channel.send(embed=embed)
 
 bot.run(bot_token)
